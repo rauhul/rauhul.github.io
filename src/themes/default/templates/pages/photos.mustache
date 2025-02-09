@@ -1,9 +1,14 @@
 {{<html}}
 {{$main}}
-    <div id="photo-grid">
+    <div class="photo-grid">
         {{#photos}}
-        <div class="photo-item">
-            <img src="{{thumbnail-url}}" alt="{{description}}" loading=lazy class="photo-img">
+        <div class="photo-item-wrapper">
+            <div class="photo-item">
+                <img src="{{thumbnail-url}}" alt="{{description}}" loading="lazy" class="photo-img">
+                <div class="photo-metadata">
+                    {{focal-length}}mm | f/{{aperture}} | {{ shutter-speed }} | ISO{{iso}}
+                </div>
+            </div>
         </div>
         {{/photos}}
     </div>
