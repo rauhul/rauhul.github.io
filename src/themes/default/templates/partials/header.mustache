@@ -1,17 +1,14 @@
 <header>
-    <a id="logo" href="/">
-        <img
-            src="/images/logo.png"
-            alt="Logo of {{site.title}}"
-            title="{{site.title}}"
-        >
-    </a>
-
     <nav>
-        <div class="navigation">
-            {{#navigation}}
-            <a href="{{url}}"{{#class}} class="{{.}}"{{/class}}>{{label}}</a>
-            {{/navigation}}
+        <div class="navigation-secondary navigation-item">
+            <a href="/">rauhul</a>
         </div>
+        <div class="navigation-spacer"></div>
+        {{#navigation}}
+        <div class="navigation-primary navigation-item">
+            <a href="{{url}}"{{#class}} class="{{.}}"{{/class}}>{{label}}</a>
+        </div>
+        {{/navigation}}
+        <div class="navigation-spacer"></div>
     </nav>
 </header>

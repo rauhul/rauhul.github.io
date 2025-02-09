@@ -1,0 +1,21 @@
+
+
+.photo-grid {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    grid-template-rows: masonry;
+}
+
+.photo-item {
+    break-inside: avoid;
+    margin-bottom: 1em;
+    max-width:866;
+    max-height:1060;
+    width:calc(866px*250/1060);
+    flex-grow:calc(866*250/1060);
+}
+
+.photo-img {
+    
+}
