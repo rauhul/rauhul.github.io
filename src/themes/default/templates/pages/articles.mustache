@@ -1,11 +1,28 @@
 {{<html}}
 {{$main}}
-    <div id="blog-grid">
-        <div class="grid grid-321">
-        {{#pagination.data.post}}
-            {{> partials.blog.post}}
-        {{/pagination.data.post}}
-        </div>
+
+{{#empty(pagination.articles)}}
+{{/empty(pagination.articles)}}
+{{^empty(pagination.articles)}}
+{{#pagination.articles}}
+    <h1>{{number}}</h1>
+    <h1>{{total}}</h1>
+{{/pagination.articles}}
+{{/empty(pagination.articles)}}
+
+{{& page.contents}}
+
+<div id="blog" class="wrapper">
+    
+    <div id="blog-articles" class="grid grid-321">
+    {{#site.context.articles}}
+        {{> partials.article}}
+    {{/site.context.articles}}
     </div>
+
+    <br>
+    <a href="/articles/page/1" class="cta">Browse all articles</a>
+</div>
+
 {{/main}}
 {{/html}}

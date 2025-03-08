@@ -1,0 +1,29 @@
+id: article
+location: articles
+template: pages.default
+
+pagination:
+  bundle: articles/article/pagination
+  limit: 12
+  sort: publication
+  order: desc
+
+context:
+  site:
+    articles:
+      sort: publication
+      order: desc
+      limit: 9
+
+  local:
+    prev:
+      references: article
+      foreignKey: $prev
+      sort: order
+      order: asc
+
+    next:
+      references: article
+      foreignKey: $next
+      sort: order
+      order: asc

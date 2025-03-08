@@ -47,8 +47,6 @@
             box-sizing: border-box; /* Include padding in width calculation */        
             transition: all .2s ease-in-out;
 
-            .link-details-service {}
-
             .link-details-user {
                 white-space: nowrap; /* Prevent text from wrapping */
                 overflow: hidden; /* Hide overflow text */
