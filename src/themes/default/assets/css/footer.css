@@ -1,0 +1,12 @@
+footer {
+    width: 100%;
+    padding: 0.5rem; /* Add padding for better readability */
+    box-sizing: border-box; /* Include padding in width calculation */
+
+    font-size: 0.8rem;
+    font-family: monospace;
+    text-align: right;
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide overflow text */
+    text-overflow: ellipsis; /* Add ellipsis for overflow text */
+}

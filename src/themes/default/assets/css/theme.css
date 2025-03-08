@@ -1,4 +1,7 @@
-body {
+:root {
+    /* color-scheme: light dark; */
+    /* background: light-dark(white, #222); */
+
     font-family: -apple-system,BlinkMacSystemFont,Roboto,"Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
     -webkit-text-size-adjust: 100%;
     text-rendering: optimizeLegibility;
@@ -7,99 +10,4 @@ body {
     font-variant-ligatures: common-ligatures;
     font-feature-settings: "liga";
     line-height: 1.3;
-}
-
-.navigation-column {
-    width: 2em;
-    display: flex;
-    flex-direction: row;    
-    background-color: rgb(202, 202, 255);
-    height: 100%;
-}
-
-header {
-    .navigation-primary {
-        color: black;
-    }
-
-    .navigation-secondary {
-        color: rgb(0,0,0,0.4);
-    }
-
-    .navigation-spacer {
-        height: 1em;
-    }
-
-    .navigation-item {
-        display: block;
-        transition: color .1s;
-        padding: 5px;
-        width: 100%;
-        height: 2em;
-        line-height: 2em;
-        background-color: rgb(249, 237, 223);
-        border-bottom: 2px solid;
-    }
-
-    a {
-        text-decoration: none;
-    }
-
-    a:hover {
-        filter: brightness(150%);
-        color: inherit;
-    }
-
-    a:visited {
-        color: inherit;
-    }
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    max-width: 100vw;
-}
-
-footer {
-    text-align: center;
-    width: 100%;
-    background-color: rgb(155, 231, 231);
-}
-
-
-
-
-.content {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: row;
-    width: 100vw;
-    background-color: blueviolet;
-}
-
-
-
-
-.content-col {
-    flex-grow: 10;
-    text-align: left;
-    background-color: rgb(230, 153, 153);
-    height:100%;
-    width: 100%;
-}
-
-.content-col img {
-    max-width: 100%;
-    height: auto;
-}
-
-
-.footer-wrapper {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    max-width: 100%;
-    background-color: chocolate;
 }

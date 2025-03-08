@@ -18,29 +18,35 @@
     {{#page.imageUrl}}<meta name="twitter:image" content="{{.}}">{{/page.imageUrl}}
 
     <link rel="stylesheet" href="{{site.baseUrl}}/css/reset.css">
+    <link rel="stylesheet" href="{{site.baseUrl}}/css/color.css">
     <link rel="stylesheet" href="{{site.baseUrl}}/css/theme.css">
+
+    <link rel="stylesheet" href="{{site.baseUrl}}/css/header.css">
+    <link rel="stylesheet" href="{{site.baseUrl}}/css/content.css">
+    <link rel="stylesheet" href="{{site.baseUrl}}/css/footer.css">    
+
     <link rel="stylesheet" href="{{site.baseUrl}}/css/photos.css">
-    <link rel="stylesheet" href="{{site.baseUrl}}/css/style.css">
     {{#page.css}}<link rel="stylesheet" href="{{.}}">{{/page.css}}
 </head>
 
 <body>
-    
     <div class="content">
-        <div class="navigation-column">
-            {{> partials.header}}
-        </div> 
-        
-        <div class="content-col">
-            <main>
-                {{$main}}{{/main}}
-            </main>
+        <div class="content-body">
+            <div class="content-body-column-navigation">
+                {{> partials.header}}
+            </div>
+            
+            <div class="content-body-column-main">
+                <main>
+                    {{$main}}{{/main}}
+                </main>
+            </div>
+        </div>
+        <div class="content-footer">
+            {{> partials.footer}}
         </div>
     </div>
-    <div class="footer-wrapper"> 
-        {{> partials.footer}}
-    </div>
-    
+
     {{#page.js}}<script src="{{.}}" async></script>{{/page.js}}
 </body>
 </html>
