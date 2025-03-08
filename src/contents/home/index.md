@@ -1,7 +1,7 @@
 ---
 title: "Home"
 description: "Welcome to the home page."
-template: "pages.home"
+template: "pages.default"
 ---
 
 # Home

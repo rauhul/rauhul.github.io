@@ -1,0 +1,24 @@
+{{<html}}
+{{$main}}
+    {{#links}}
+    <br>
+    <h2>{{section}}</h2>
+    <br>
+    <div class="link-grid">
+        {{#links}}
+        <a href="{{profile-url}}">
+        <figure class="link-item">
+            <div class="link-image-wrapper">
+                <img src="{{site.baseUrl}}/images/logos/{{service}}.svg" alt="{{service}} Logo" loading="lazy" class="link-image">
+            </div>
+            <div class="link-details">
+                <h4 class="link-details-service">{{service}}</h4>
+                <h2 class="link-details-user">{{user}}</h2>
+            </div>
+        </figure>
+        </a>
+        {{/links}}
+    </div>
+    {{/links}}
+{{/main}}
+{{/html}}

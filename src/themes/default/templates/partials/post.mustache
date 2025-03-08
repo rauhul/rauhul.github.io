@@ -1,0 +1,17 @@
+<div class="card">
+    <div class="meta">
+        <time datetime="{{publication.html}}">{{publication.html}}</time>
+        {{#readingTime}} &middot; <span class="reading-time">{{readingTime}} min read</span>{{/readingTime}}
+    </div>
+    
+    <h2 class="title"><a href="{{permalink}}" target="">{{title}}</a></h2>
+    <p>{{description}}</p>
+
+    <div class="spacer"></div>
+
+    <div class="tag-list">
+    {{#tags}}
+        <a href="{{permalink}}"><small>{{title}}</small></a>
+    {{/tags}}
+    </div>
+</div>

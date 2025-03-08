@@ -1,3 +1,13 @@
+---
+type: article
+title: "Beginner's guide to Swift package manager command plugins"
+description: Learn how to create command plugins for the Swift Package Manager to execute custom actions using SPM and other tools.
+publication: 2022-05-16 16:20:00
+tags: 
+    - swift-package-manager
+authors:
+    - tibor-bodecs
+---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 ## Heading 2

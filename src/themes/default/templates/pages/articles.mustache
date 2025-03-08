@@ -1,0 +1,11 @@
+{{<html}}
+{{$main}}
+    <div id="blog-grid">
+        <div class="grid grid-321">
+        {{#pagination.data.post}}
+            {{> partials.blog.post}}
+        {{/pagination.data.post}}
+        </div>
+    </div>
+{{/main}}
+{{/html}}

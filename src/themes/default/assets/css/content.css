@@ -1,5 +1,5 @@
 .content {
-    background-color: var(--uchu-light-gray);
+    background-color: var(--uchu-gray-1);
     display: flex;
     flex-direction: column;
     /* FIXME: not 100vh while image loading */
@@ -40,6 +40,6 @@
         /* flex-direction: row; */
         width: 100%;
         max-width: 100%;
-        background-color: var(--uchu-gray);
+        background-color: var(--uchu-gray-2);
     }
 }

@@ -5,6 +5,7 @@ footer {
 
     font-size: 0.8rem;
     font-family: monospace;
+    font-weight: bold;
     text-align: right;
     white-space: nowrap; /* Prevent text from wrapping */
     overflow: hidden; /* Hide overflow text */
