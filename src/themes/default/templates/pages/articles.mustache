@@ -1,26 +1,25 @@
 {{<html}}
 {{$main}}
 
-{{#empty(pagination.articles)}}
-{{/empty(pagination.articles)}}
-{{^empty(pagination.articles)}}
-{{#pagination.articles}}
-    <h1>{{number}}</h1>
-    <h1>{{total}}</h1>
-{{/pagination.articles}}
-{{/empty(pagination.articles)}}
-
-{{& page.contents}}
-
-<div id="blog" class="wrapper">
-    
-    <div id="blog-articles" class="grid grid-321">
+<div class="article-grid">
     {{#site.context.articles}}
-        {{> partials.article}}
+    <article class="article-item">
+        <img class="article-image" src="{{thumbnail-url}}" alt="{{description}}" loading="lazy">
+        <div class="article-metadata">
+            <div class="article-meta-header">
+                <time datetime="{{publication.html}}">{{publication.html}}</time>
+                {{#readingTime}} &middot; <span class="reading-time">{{readingTime}} min read</span>{{/readingTime}}
+            </div>
+            <h2 class="title"><a href="{{permalink}}" target="">{{title}}</a></h2>
+            <p>{{description}}</p>
+            <div class="tag-list">
+            {{#tags}}
+                <a href="{{permalink}}"><small>{{title}}</small></a>
+            {{/tags}}
+            </div>
+        </div>
+    </article>
     {{/site.context.articles}}
-    </div>
-
-    <br>
     <a href="/articles/page/1" class="cta">Browse all articles</a>
 </div>
 

@@ -10,7 +10,7 @@
         border-radius: 1ch;
         overflow: hidden;
 
-        .photo-img {
+        .photo-image {
             width: 100%; 
             height: auto;
             display: block;
@@ -43,7 +43,7 @@
     }
 
     .photo-item:hover {
-        .photo-img {
+        .photo-image {
             transform: scale(1.02);
             filter: opacity(0.8);
         }

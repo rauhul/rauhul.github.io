@@ -3,7 +3,7 @@
     <div class="photo-grid">
         {{#photos}}
         <figure class="photo-item">
-            <img src="{{thumbnail-url}}" alt="{{description}}" loading="lazy" class="photo-img">
+            <img class="photo-image" src="{{thumbnail-url}}" alt="{{description}}" loading="lazy">
             <div class="photo-metadata">
                 {{focal-length}}mm | f/{{aperture}} | {{ shutter-speed }}s | ISO{{iso}}
             </div>
