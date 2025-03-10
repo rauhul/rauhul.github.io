@@ -1,20 +1,20 @@
 .photo-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
     grid-template-rows: masonry;
     gap: 1rem;
 
     .photo-item {
         position: relative; /* Add relative positioning */
-        margin: 0;
         border-radius: 1ch;
         overflow: hidden;
+        background-color: white;
+        border: 1px solid var(--uchu-gray-3);
 
         .photo-image {
             width: 100%; 
             height: auto;
             display: block;
-            transition: all .2s ease-in-out;
         }
     
         .photo-metadata {
@@ -38,14 +38,14 @@
             backdrop-filter: blur(3px); /* Add blur effect */
             opacity: 0; /* Hide metadata by default */
     
-            transition: all .2s ease-in-out;
         }
     }
 
     .photo-item:hover {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+
         .photo-image {
             transform: scale(1.02);
-            filter: opacity(0.8);
         }
 
         .photo-metadata {

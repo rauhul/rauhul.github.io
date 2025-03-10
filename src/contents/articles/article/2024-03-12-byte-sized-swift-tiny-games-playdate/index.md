@@ -1,8 +1,9 @@
 ---
 type: article
 title: "Byte-sized Swift: Building Tiny Games for the Playdate"
-description: "FIXME: Write this.."
+description: "How I ported Embedded Swift to the Playdate"
 publication: 2024-03-12 10:00:00
+tags: [swift, playdate]
 ---
 
 I'm excited to share [swift-playdate-examples](https://github.com/apple/swift-playdate-examples), a technical demonstration of using Swift to build games for [Playdate](https://play.date/), a handheld game system by [Panic](https://panic.com).

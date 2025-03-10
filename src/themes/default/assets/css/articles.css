@@ -1,18 +1,16 @@
 .article-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
-    grid-gap: 2rem;
-    margin: 2rem 0;
+    grid-gap: 1rem;
 
     .article-item {
         display: flex;
         flex-direction: column;
-        border-radius: 12px;
+        border-radius: 1ch;
         overflow: hidden;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        background-color: var(--card-bg, #fff);
-        
+        background-color: white;
+        border: 1px solid var(--uchu-gray-3);
+
         .article-image {
             width: 100%;
             aspect-ratio: 16/9;
@@ -25,7 +23,7 @@
             display: flex;
             flex-direction: column;
             flex-grow: 1;
-            
+
             time, .reading-time {
                 color: var(--muted-text, #666);
                 font-size: 0.8rem;
@@ -51,61 +49,36 @@
                 font-size: 0.9rem;
                 margin-bottom: 1rem;
                 flex-grow: 1;
-            }
-            
-            .spacer {
-                flex-grow: 1;
-            }
-            
-            .tag-list {
-                display: flex;
-                flex-wrap: wrap;
-                gap: 0.5rem;
-                margin-top: auto;
-                
-                a {
-                    background-color: var(--tag-bg, #f0f0f0);
-                    color: var(--tag-color, #555);
-                    padding: 0.3rem 0.6rem;
-                    border-radius: 50px;
-                    font-size: 0.7rem;
-                    text-decoration: none;
-                    transition: background-color 0.2s ease;
-                    
-                    &:hover {
-                        background-color: var(--tag-hover-bg, #e0e0e0);
-                    }
-                }
-            }
+            }            
         }
     }
 
     .article-item:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-    }
-
-    .cta {
-        grid-column: 1 / -1;
-        text-align: center;
-        margin-top: 1rem;
-        padding: 0.8rem 1.5rem;
-        background-color: var(--primary-color, #0070f3);
-        color: white;
-        text-decoration: none;
-        border-radius: 5px;
-        font-weight: 600;
-        display: inline-block;
-        transition: background-color 0.2s ease;
-        
-        &:hover {
-            background-color: var(--primary-hover, #005dd1);
-        }
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
     }
 }
 
 @media (max-width: 768px) {
     .article-grid {
         grid-template-columns: 1fr;
+    }
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: auto;
+    
+    .tag {
+        background-color: var(--uchu-gray-1);
+        color: var(--uchu-yin-6);
+        padding: 0.3rem 0.6rem;
+        border-radius: 50px;
+        font-size: 0.7rem;
+    }
+
+    .tag:hover {
+        background-color: var(--uchu-gray-2);
     }
 }

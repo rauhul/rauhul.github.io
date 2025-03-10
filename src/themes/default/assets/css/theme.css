@@ -11,6 +11,15 @@
     font-feature-settings: "liga";
     line-height: 1.3;
 }
+:root * {
+    transition: 
+        text-decoration 0.3s ease, 
+        box-shadow 0.3s ease, 
+        background-color 0.3s ease, 
+        filter 0.3s ease, 
+        transform 0.3s ease, 
+        opacity 0.3s ease;
+}
 
 a {
     color: inherit; /* blue colors for links too */
@@ -41,3 +50,29 @@ h4 {
     font-size: 0.7rem;
 }
 
+
+.home {
+    h1 {
+        color: var(--uchu-yin-9);
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+    
+    h2 {
+        color: var(--uchu-yin-9);
+        font-weight: bold;
+        font-size: 1rem;
+    }
+    
+    h3 {
+        color: var(--uchu-red-6);
+        font-weight: bold;
+        font-size: 0.85rem;
+    }
+    
+    h4 {
+        color: var(--uchu-yin-4);
+        font-weight: bold;
+        font-size: 0.7rem;
+    }
+}
