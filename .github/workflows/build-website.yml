@@ -44,12 +44,12 @@ jobs:
         name: "Build: Toucan"
         uses: addnab/docker-run-action@v3
         with:
-            image: swift:6.0.3
-            options: -v ${{ github.workspace }}:/github.workspace
-            run: |
-              cd /github.workspace/code/toucan
-              swift build -c release --product toucan-cli
-              cp .build/release/toucan-cli /toucan
+          image: swift:6.0.3
+          options: -v ${{ github.workspace }}:/github.workspace
+          run: |
+            cd /github.workspace/code/toucan
+            swift build -c release --product toucan-cli
+            cp .build/release/toucan-cli /toucan
 
       # - if: steps.cache-toucan.outputs.cache-hit != 'true'
       #   name: "Build: Toucan"
@@ -59,15 +59,19 @@ jobs:
 
       - name: "Checkout: Website"
         uses: actions/checkout@v4
+        with:
+          path: ${{ github.workspace }}/code/website
   
       - name: "Build: Website"
-        run: ${{ github.workspace }}/toucan generate src docs
+        run: |
+          cd ${{ github.workspace }}/code/website
+          ${{ github.workspace }}/toucan generate src docs
 
       - name: "Upload: Website"
         id: deployment
         uses: actions/upload-pages-artifact@v3
         with:
-          path: docs
+          path: ${{ github.workspace }}/code/website/docs
   
   deploy:
     environment:
