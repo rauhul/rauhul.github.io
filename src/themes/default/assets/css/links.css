@@ -48,8 +48,17 @@
 
             box-sizing: border-box; /* Include padding in width calculation */        
 
+            .link-details-service {
+                color: var(--uchu-yin-4);
+                font-weight: bold;
+                font-size: 0.7rem;
+            }
 
             .link-details-user {
+                color: var(--uchu-yin-9);
+                font-weight: bold;
+                font-size: 1rem;
+            
                 white-space: nowrap; /* Prevent text from wrapping */
                 overflow: hidden; /* Hide overflow text */
                 text-overflow: ellipsis; /* Add ellipsis for overflow text */

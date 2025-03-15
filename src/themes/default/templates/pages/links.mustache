@@ -7,15 +7,15 @@
     <div class="link-grid">
         {{#links}}
         <a href="{{profile-url}}">
-        <figure class="link-item">
-            <div class="link-image-wrapper">
-                <img class="link-image" src="{{site.baseUrl}}/images/logos/{{service}}.svg" alt="{{service}} Logo" loading="lazy">
-            </div>
-            <div class="link-details">
-                <h4>{{service}}</h4>
-                <h2 class="link-details-user">{{user}}</h2>
-            </div>
-        </figure>
+            <figure class="link-item">
+                <div class="link-image-wrapper">
+                    <img class="link-image" src="{{site.baseUrl}}/images/logos/{{service}}.svg" alt="{{service}} Logo" loading="lazy">
+                </div>
+                <div class="link-details">
+                    <span class="link-details-service">{{service}}</span>
+                    <span class="link-details-user">{{user}}</span>
+                </div>
+            </figure>
         </a>
         {{/links}}
     </div>
