@@ -12,7 +12,6 @@ jobs:
       image: swift:6.0.3
 
     env:
-      TOUCAN_URL: git@github.com:toucansites/toucan.git
       TOUCAN_REF: 1.0.0-beta.2
 
     steps:
@@ -21,13 +20,13 @@ jobs:
         uses: actions/cache@v4
         with:
           path: /toucan
-          key: tool-${{ env.TOUCAN_URL }}-${{ env.TOUCAN_REF }}
+          key: tool-${{ env.TOUCAN_REF }}
       
       - if: steps.cache-toucan.outputs.cache-hit != 'true'
         name: "Checkout: Repository"
         uses: actions/checkout@v2
         with:
-          repository: ${{ env.TOUCAN_URL }}
+          repository: toucansites/toucan
           ref: ${{ env.TOUCAN_REF }}
 
       - if: steps.cache-toucan.outputs.cache-hit != 'true'
