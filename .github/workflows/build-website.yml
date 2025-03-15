@@ -27,23 +27,27 @@ jobs:
         uses: actions/cache@v4
         with:
           path: /toucan
-          key: tool-${{ env.TOUCAN_REF }}
-      
+          key: toucan-${{ env.TOUCAN_REF }}
+          restore-keys:
+            toucan-${{ env.TOUCAN_REF }}
+            tool-${{ env.TOUCAN_REF }}
+
       - if: steps.cache-toucan.outputs.cache-hit != 'true'
         name: "Checkout: Toucan"
         uses: actions/checkout@v4
         with:
           repository: toucansites/toucan
           ref: ${{ env.TOUCAN_REF }}
+          path: /code/toucan
 
       - if: steps.cache-toucan.outputs.cache-hit != 'true'
         name: "Build: Toucan"
         uses: addnab/docker-run-action@v3
         with:
             image: swift:6.0.3
-            options: -v ${{ github.workspace }}:/toucan
+            options: -v ${{ github.workspace }}:/
             run: |
-              cd /toucan
+              cd /code/toucan
               swift build -c release --product toucan-cli
               cp .build/release/toucan-cli /toucan
 
