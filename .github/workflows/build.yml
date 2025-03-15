@@ -14,9 +14,10 @@ jobs:
       TOUCAN_RELEASE: "1.0.0-beta.2"
 
     steps:
+
       - name: "Cache: Toucan build"
         id: cache-toucan
-        uses: actions/cache@v2
+        uses: actions/cache@v4
         with:
           path: .build
           key: ${{ runner.os }}-${{ env.TOUCAN_RELEASE }}
@@ -31,5 +32,4 @@ jobs:
             swift build -c release
             cp -r .build/release ../.build/toucan
 
-
-      # - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
