@@ -49,13 +49,7 @@ jobs:
           run: |
             cd /github.workspace/code/toucan
             swift build -c release --product toucan-cli
-            cp .build/release/toucan-cli /toucan
-
-      # - if: steps.cache-toucan.outputs.cache-hit != 'true'
-      #   name: "Build: Toucan"
-      #   run: |
-      #       swift build -c release --product toucan-cli
-      #       cp .build/release/toucan-cli /toucan
+            cp .build/release/toucan-cli /github.workspace/toucan
 
       - name: "Checkout: Website"
         uses: actions/checkout@v4
