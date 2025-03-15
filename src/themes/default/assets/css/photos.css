@@ -14,7 +14,6 @@
         border-radius: 1ch;
         overflow: hidden;
         background-color: white;
-        border: 1px solid var(--uchu-gray-3);
 
         .photo-image {
             width: 100%; 
@@ -40,7 +39,7 @@
             text-overflow: ellipsis; /* Add ellipsis for overflow text */
             
             background: rgba(255, 255, 255, 0.4);
-            backdrop-filter: blur(3px); /* Add blur effect */
+            backdrop-filter: blur(5px); /* Add blur effect */
             opacity: 0; /* Hide metadata by default */
     
         }
