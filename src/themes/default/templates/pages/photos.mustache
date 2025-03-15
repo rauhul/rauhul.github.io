@@ -1,14 +1,18 @@
 {{<html}}
 {{$main}}
-    <div class="photo-grid">
-        {{#photos}}
-        <figure class="photo-item">
-            <img class="photo-image" src="{{thumbnail-url}}" alt="{{description}}" loading="lazy">
-            <div class="photo-metadata">
-                {{focal-length}}mm | f/{{aperture}} | {{ shutter-speed }}s | ISO{{iso}}
-            </div>
-        </figure>
-        {{/photos}}
-    </div>
+
+<h1>Photos</h1>
+
+<div class="photo-grid">
+    {{#photos}}
+    <figure class="photo-item">
+        <img class="photo-image" src="{{thumbnail-url}}" alt="{{description}}" loading="lazy">
+        <div class="photo-metadata">
+            {{focal-length}}mm | f/{{aperture}} | {{ shutter-speed }}s | ISO{{iso}}
+        </div>
+    </figure>
+    {{/photos}}
+</div>
+
 {{/main}}
 {{/html}}

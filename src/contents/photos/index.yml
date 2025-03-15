@@ -1,10 +1,16 @@
 photos:
+- thumbnail-url: https://rauhulpic.dws.rip/download/pics/elohim_1.png
+  focal-length: 4
+  aperture: 1.8
+  shutter-speed: 1/400
+  iso: 100
+
 - thumbnail-url: "https://picsum.photos/200/300"
   description: "abcd"
-  focal-length: 45
-  aperture: 2.8
-  shutter-speed: 1/100
-  iso: 640
+  focal-length: 4
+  aperture: 1.8
+  shutter-speed: 1/400
+  iso: 100
 - thumbnail-url: "https://picsum.photos/300/200"
   description: "abcd"
   focal-length: 50
