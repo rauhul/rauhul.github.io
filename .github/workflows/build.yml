@@ -27,7 +27,7 @@ jobs:
       - if: steps.cache-toucan.outputs.cache-hit != 'true'
         name: "Build: Toucan"
         run: |
-            git clone --depth 1 --branch $TOUCAN_RELEASE git@github.com:toucansites/toucan.git
+            git clone --depth 1 --branch ${{ env.TOUCAN_RELEASE }} git@github.com:toucansites/toucan.git
             cd toucan
             swift build -c release
             cp -r .build/release ../.build/toucan
