@@ -24,7 +24,7 @@ jobs:
       
       - if: steps.cache-toucan.outputs.cache-hit != 'true'
         name: "Checkout: Toucan"
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           repository: toucansites/toucan
           ref: ${{ env.TOUCAN_REF }}
@@ -40,3 +40,21 @@ jobs:
   
       - name: "Build: Website"
         run: /toucan generate src docs
+
+      - name: "Upload: Website"
+        id: deployment
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+  
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
