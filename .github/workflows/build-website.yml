@@ -23,7 +23,7 @@ jobs:
           key: tool-${{ env.TOUCAN_REF }}
       
       - if: steps.cache-toucan.outputs.cache-hit != 'true'
-        name: "Checkout: Repository"
+        name: "Checkout: Toucan"
         uses: actions/checkout@v2
         with:
           repository: toucansites/toucan
@@ -35,7 +35,8 @@ jobs:
             swift build -c release --product toucan-cli
             cp .build/release/toucan-cli /toucan
 
-      - uses: actions/checkout@v4
+      - name: "Checkout: Website"
+        uses: actions/checkout@v4
   
-      - name: "Run: Toucan"
-        run: /toucan src docs
+      - name: "Build: Website"
+        run: /toucan generate src docs
