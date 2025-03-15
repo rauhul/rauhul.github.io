@@ -27,6 +27,7 @@ jobs:
       - if: steps.cache-toucan.outputs.cache-hit != 'true'
         name: "Build: Toucan"
         run: |
+            update-ca-certificates
             git clone --depth 1 --branch ${{ env.TOUCAN_RELEASE }} git@github.com:toucansites/toucan.git
             cd toucan
             swift build -c release
