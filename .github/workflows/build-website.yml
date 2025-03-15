@@ -32,8 +32,8 @@ jobs:
       - if: steps.cache-toucan.outputs.cache-hit != 'true'
         name: "Build: Toucan"
         run: |
-            swift build -c release --product toucan
-            cp .build/release/toucan /toucan
+            swift build -c release --product toucan-cli
+            cp .build/release/toucan-cli /toucan
 
       - uses: actions/checkout@v4
   
