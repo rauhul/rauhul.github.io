@@ -1,7 +1,12 @@
 .photo-grid {
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
     grid-template-rows: masonry;
+    gap: 1rem; */
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr) minmax(14rem, 2fr)) minmax(8rem, 1fr);
+    grid-template-rows: masonry; 
     gap: 1rem;
 
     .photo-item {

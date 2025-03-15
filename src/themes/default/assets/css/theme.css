@@ -87,6 +87,7 @@ main article {
         font-size: 0.9rem;
         border-radius: 1ch;
         border: 2px solid var(--uchu-gray-6);
+        max-width: 100%; 
     }
 
     img {
