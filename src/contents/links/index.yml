@@ -11,7 +11,7 @@ links:
     service: "Bluesky"
     user: "@rauhul.bsky.social"
   - profile-url: "https://www.linkedin.com/in/rauhul"
-    service: "Linkedin"
+    service: "LinkedIn"
     user: "@rauhul"
   - profile-url: "https://rauhul.me"
     service: "Website"
