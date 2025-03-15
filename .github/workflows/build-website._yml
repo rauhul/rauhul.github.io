@@ -1,0 +1,40 @@
+# name: Build Website
+
+# on:
+#   push:
+#     branches:
+#       - main
+#     paths-ignore:
+#       - '.github/workflows/build-toucan.yml'
+
+# env:
+#   TOUCAN_RELEASE: "1.0.0-beta.2"
+
+# jobs:
+#   build-website:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@v4
+        
+#       - name: "Download: Toucan build"
+#         id: download-toucan
+#         uses: actions/cache@v4
+#         with:
+#           path: .build/toucan
+#           key: toucan-${{ env.TOUCAN_RELEASE }}
+#           fail-on-cache-miss: false
+
+#       - name: "Download: Toucan artifact"
+#         if: steps.download-toucan.outputs.cache-hit != 'true'
+#         uses: actions/download-artifact@v4
+#         with:
+#           name: toucan-${{ env.TOUCAN_RELEASE }}
+#           path: .build/toucan
+
+#       - name: "Set executable permissions"
+#         run: chmod +x .build/toucan/toucan
+
+#       - name: "Run: Toucan site generator"
+#         run: .build/toucan/toucan build
+
+#       # Add additional steps here for deployment if needed
