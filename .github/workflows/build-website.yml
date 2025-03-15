@@ -1,0 +1,42 @@
+name: Build Website
+
+on:  
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container:
+      image: swift:6.0.3
+
+    env:
+      TOUCAN_URL: git@github.com:toucansites/toucan.git
+      TOUCAN_REF: 1.0.0-beta.2
+
+    steps:
+      - name: "Cache: Toucan"
+        id: cache-toucan
+        uses: actions/cache@v4
+        with:
+          path: /toucan
+          key: tool-${{ env.TOUCAN_URL }}-${{ env.TOUCAN_REF }}
+      
+      - if: steps.cache-toucan.outputs.cache-hit != 'true'
+        name: "Checkout: Repository"
+        uses: actions/checkout@v2
+        with:
+          repository: ${{ env.TOUCAN_URL }}
+          ref: ${{ env.TOUCAN_REF }}
+
+      - if: steps.cache-toucan.outputs.cache-hit != 'true'
+        name: "Build: Toucan"
+        run: |
+            swift build -c release --product toucan
+            cp .build/release/toucan /toucan
+
+      - uses: actions/checkout@v4
+  
+      - name: "Run: Toucan"
+        run: /toucan src docs
