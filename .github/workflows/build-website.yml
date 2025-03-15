@@ -45,9 +45,9 @@ jobs:
         uses: addnab/docker-run-action@v3
         with:
             image: swift:6.0.3
-            options: -v ${{ github.workspace }}:/
+            options: -v ${{ github.workspace }}:/github.workspace
             run: |
-              cd /code/toucan
+              cd /github.workspace/code/toucan
               swift build -c release --product toucan-cli
               cp .build/release/toucan-cli /toucan
 
