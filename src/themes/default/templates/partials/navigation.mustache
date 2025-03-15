@@ -1,12 +1,11 @@
-<header>
-    <nav>
-        {{#navigation}}
+<nav>
+    {{#navigation}}
+    <div class="navigation-section">
         {{#children}}
         <div class="navigation-{{ style }} navigation-item">
             <a href="{{ url }}">{{ label }}</a>
         </div>
         {{/children}}
-        <div class="navigation-spacer"></div>
-        {{/navigation}}
-    </nav>
-</header>
+    </div>
+    {{/navigation}}
+</nav>

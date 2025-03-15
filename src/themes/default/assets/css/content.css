@@ -7,15 +7,18 @@
     min-width: 100vw;
 
     .content-body {
-        flex-grow: 1;
         display: flex;
+        flex-grow: 1;
         justify-content: center;
+
+        flex-direction: row;
+        @media screen and (max-width: 800px) {
+            flex-direction: column;
+        }
 
         .content-body-column-navigation {
             padding: 1rem;
             padding-top: 1rem;
-
-            display: flex;
             justify-content: flex-end;
             text-align: right;
         }

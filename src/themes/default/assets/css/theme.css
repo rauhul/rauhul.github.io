@@ -88,7 +88,20 @@ main article {
         border: 2px solid var(--uchu-gray-6);
         max-width: 100%; 
     }
-    
+
+    img, video {
+        display: block;
+        border-radius: 1ch;
+        max-width: 800px;
+        margin: 2rem auto;
+    }
+
+    video {
+        box-shadow: 
+            0 10px 30px rgba(0, 0, 0, 0.3),  /* Main soft shadow */
+            0 2px 10px rgba(0, 0, 0, 0.2);   /* Additional subtle inner shadow */        
+    }
+
     a {
         color: var(--uchu-blue-4);
         text-decoration: none;

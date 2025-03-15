@@ -1,0 +1,38 @@
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    @media screen and (max-width: 800px) {
+        gap: 1rem;
+    } 
+
+    .navigation-section {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 0rem;
+        @media screen and (max-width: 800px) {
+            flex-direction: row;
+            gap: 0rem 0.5rem;
+        } 
+
+        .navigation-item {
+            display: block;
+            line-height: 1.5rem;
+            font-size: 1rem;
+            font-weight: bold;
+    
+            &.navigation-primary {
+                color: var(--uchu-yin-9);
+            }
+        
+            &.navigation-secondary {
+                color: var(--uchu-yin-6);
+            } 
+
+            &:hover {
+                color: var(--uchu-yin-4);
+            }
+        }    
+    }
+}
