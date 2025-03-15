@@ -48,7 +48,7 @@ jobs:
           options: -v ${{ github.workspace }}:/github.workspace
           run: |
             cd /github.workspace/code/toucan
-            swift build -c release --product toucan-cli
+            swift build -c release --product toucan-cli --static-swift-stdlib
             cp .build/release/toucan-cli /github.workspace/toucan
 
       - name: "Checkout: Website"
