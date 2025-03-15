@@ -1,0 +1,35 @@
+name: Build Website
+
+on:
+  push:
+    branches:
+      - toucan
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container:
+      image: swift:6.0.3
+    env:
+      TOUCAN_RELEASE: "1.0.0-beta.2"
+
+    steps:
+      - name: "Cache: Toucan build"
+        id: cache-toucan
+        uses: actions/cache@v2
+        with:
+          path: .build
+          key: ${{ runner.os }}-${{ env.TOUCAN_RELEASE }}
+          restore-keys: |
+            ${{ runner.os }}-${{ env.TOUCAN_RELEASE }}
+
+      - if: steps.cache-toucan.outputs.cache-hit != 'true'
+        name: "Build: Toucan"
+        run: |
+            git clone --depth 1 --branch $TOUCAN_RELEASE git@github.com:toucansites/toucan.git
+            cd toucan
+            swift build -c release
+            cp -r .build/release ../.build/toucan
+
+
+      # - uses: actions/checkout@v4
