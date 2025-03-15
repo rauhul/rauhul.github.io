@@ -89,16 +89,6 @@ main {
         max-width: 100%; 
     }
 
-    a {
-        color: var(--uchu-blue-4);
-        text-decoration: none;
-        font-weight: bolder;
-        
-        &:hover {
-            text-decoration: underline;
-        }
-    }
-
     ol, ul {
         text-indent: 1rem;
     }

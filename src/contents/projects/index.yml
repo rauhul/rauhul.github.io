@@ -1,0 +1,4 @@
+projects:
+- name: Swift Argument Parser
+  description: A powerful and flexible library for parsing command-line arguments in Swift.
+  url: https://github.com/apple/swift-argument-parser

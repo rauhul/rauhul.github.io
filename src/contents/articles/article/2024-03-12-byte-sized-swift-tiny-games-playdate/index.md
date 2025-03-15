@@ -1,7 +1,7 @@
 ---
 type: article
 title: "Byte-sized Swift: Building Tiny Games for the Playdate"
-description: "How I ported Embedded Swift to the Playdate"
+description: "How I used Swift’s embedded mode to create tiny Playdate games—got Game of Life running and built a simple verison of Breakout."
 publication: 2024-03-12 10:00:00
 tags: [swift, playdate]
 ---
