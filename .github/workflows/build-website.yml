@@ -26,7 +26,7 @@ jobs:
         id: cache-toucan
         uses: actions/cache@v4
         with:
-          path: /toucan
+          path: ${{ github.workspace }}/toucan
           key: toucan-${{ env.TOUCAN_REF }}
           restore-keys:
             toucan-${{ env.TOUCAN_REF }}
@@ -38,7 +38,7 @@ jobs:
         with:
           repository: toucansites/toucan
           ref: ${{ env.TOUCAN_REF }}
-          path: /code/toucan
+          path: ${{ github.workspace }}/code/toucan
 
       - if: steps.cache-toucan.outputs.cache-hit != 'true'
         name: "Build: Toucan"
@@ -61,7 +61,7 @@ jobs:
         uses: actions/checkout@v4
   
       - name: "Build: Website"
-        run: /toucan generate src docs
+        run: ${{ github.workspace }}/toucan generate src docs
 
       - name: "Upload: Website"
         id: deployment
