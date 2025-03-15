@@ -40,9 +40,20 @@ jobs:
 
       - if: steps.cache-toucan.outputs.cache-hit != 'true'
         name: "Build: Toucan"
-        run: |
-            swift build -c release --product toucan-cli
-            cp .build/release/toucan-cli /toucan
+        uses: addnab/docker-run-action@v3
+        with:
+            image: swift:6.0.3
+            options: -v ${{ github.workspace }}:/toucan
+            run: |
+              cd /toucan
+              swift build -c release --product toucan-cli
+              cp .build/release/toucan-cli /toucan
+
+      # - if: steps.cache-toucan.outputs.cache-hit != 'true'
+      #   name: "Build: Toucan"
+      #   run: |
+      #       swift build -c release --product toucan-cli
+      #       cp .build/release/toucan-cli /toucan
 
       - name: "Checkout: Website"
         uses: actions/checkout@v4
