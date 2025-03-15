@@ -1,14 +1,12 @@
 <header>
     <nav>
-        <div class="navigation-secondary navigation-item">
-            <a href="/">rauhul</a>
-        </div>
-        <div class="navigation-spacer"></div>
         {{#navigation}}
-        <div class="navigation-primary navigation-item">
-            <a href="{{url}}"{{#class}} class="{{.}}"{{/class}}>{{label}}</a>
+        {{#children}}
+        <div class="navigation-{{ style }} navigation-item">
+            <a href="{{ url }}">{{ label }}</a>
         </div>
-        {{/navigation}}
+        {{/children}}
         <div class="navigation-spacer"></div>
+        {{/navigation}}
     </nav>
 </header>

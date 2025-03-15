@@ -10,29 +10,34 @@
         flex-grow: 1;
         display: flex;
         flex-direction: row;
-
-        .content-body-column-main {
-            flex-grow: 1;
-            padding: 1rem;
-
-            height:100%;
-            width: 100%;
-
-            main {
-                margin: auto;
-                max-width: 800px;
-            }
-        }
+        margin: auto;
+        padding-top: 1rem;
+        /* background-color: aqua; */
 
         .content-body-column-navigation {
             width: 8rem;
             padding: 1rem;
             
             display: flex;
+            justify-content: flex-end;
             text-align: right;
             flex-direction: row;
             height: 100%;
+            /* background-color: aquamarine; */
         }    
+
+        .content-body-column-main {
+            padding: 1rem;
+
+            height:100%;
+            width: 100%;
+
+            /* background-color: blueviolet; */
+
+            main {
+                max-width: 800px;
+            }
+        }
     }
 
     .content-footer {

@@ -36,6 +36,10 @@ main article {
         margin-bottom: 1em;
     }
 
+    > *:first-child {
+        margin-top: 0em;
+    }
+
     h1 {
         font-weight: bold;
         font-size: 1.3rem;

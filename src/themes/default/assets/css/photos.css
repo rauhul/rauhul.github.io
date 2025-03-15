@@ -1,6 +1,6 @@
 .photo-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
     grid-template-rows: masonry;
     gap: 1rem;
 
@@ -26,7 +26,7 @@
             padding: 0.5rem; /* Add padding for better readability */
             box-sizing: border-box; /* Include padding in width calculation */
     
-            font-size: 0.8rem;
+            font-size: 0.7rem;
             font-family: monospace;
             font-weight: bold;
             text-align: right;

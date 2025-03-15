@@ -2,11 +2,21 @@ baseUrl: "https://rauhul.me"
 title: "rauhul.me"
 dateFormat: "MMMM dd, yyyy"
 navigation:
-- label: "about"
-  url: "/about/"
-- label: "photos"
-  url: "/photos/"
-- label: "articles"
-  url: "/articles/"
-- label: "links"
-  url: "/links/"
+- style: secondary
+  children:
+  - label: "rauhul"
+    url: "/"
+- style: primary
+  children:
+  - label: "about"
+    url: "/about/"
+  - label: "photos"
+    url: "/photos/"
+  - label: "articles"
+    url: "/articles/"
+  - label: "links"
+    url: "/links/"
+- style: secondary
+  children:
+  - label: "issues"
+    url: "https://github.com/rauhul/rauhul.github.io/issues/new"
