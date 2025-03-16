@@ -1,4 +1,5 @@
 ---
-title: "Articles"
-template: "pages.articles"
+title: articles
+type: page
+template: pages.articles
 ---

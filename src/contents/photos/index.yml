@@ -4,7 +4,6 @@ photos:
   aperture: 1.8
   shutter-speed: 1/400
   iso: 100
-
 - url: "https://picsum.photos/200/300"
   description: "abcd"
   focal-length: 4

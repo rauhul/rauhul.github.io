@@ -17,16 +17,13 @@
         }
 
         .content-body-column-navigation {
-            padding: 1rem;
-            padding-top: 1rem;
+            margin: 1rem;
             justify-content: flex-end;
             text-align: right;
         }
 
         .content-body-column-main {
-            padding: 1rem;
-            padding-top: 1rem;
-
+            margin: 1rem;
             max-width: 1000px;
             min-width: 0px;
             flex-grow: 1;

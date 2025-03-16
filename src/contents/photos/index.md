@@ -1,4 +1,4 @@
 ---
-title: "photos"
-template: "pages.photos"
+title: photos
+template: pages.photos
 ---

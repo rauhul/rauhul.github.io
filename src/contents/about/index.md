@@ -1,5 +1,5 @@
 ---
-title: "About"
+title: about
 description: "This is the about page."
 ---
 

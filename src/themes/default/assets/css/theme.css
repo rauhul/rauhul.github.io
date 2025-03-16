@@ -76,6 +76,7 @@ main {
             font-size: 0.9rem;
             border-radius: 1ch;
             border: 1px solid var(--uchu-gray-6);
+            background-color: var(--uchu-gray-2);
         }
     }
 
@@ -89,7 +90,6 @@ main {
         border: 2px solid var(--uchu-gray-3);
         background-color: var(--uchu-gray-2);
         max-width: 100%;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
     }
 
     ol, ul {
@@ -102,6 +102,27 @@ main {
 
     ol {
         list-style: decimal inside;
+    }
+
+    blockquote {
+        p {
+            margin: 1rem;
+        }
+    
+        border-radius: 1ch;
+        border: 2px solid var(--uchu-gray-3);
+        background-color: var(--uchu-gray-2);
+        max-width: 100%;
+
+        &.note {
+            border: 2px solid var(--uchu-blue-2);
+            background-color: var(--uchu-blue-1);
+        }
+
+        &.warning {
+            border: 2px solid var(--uchu-yellow-2);
+            background-color: var(--uchu-yellow-1);
+        }
     }
 }
 
@@ -130,6 +151,8 @@ main article {
         display: block;
         border-radius: 1ch;
         max-width: 800px;
+        width: 100%;
+        min-width: 0px;
         margin: 2rem auto;
     }
 
@@ -137,5 +160,11 @@ main article {
         box-shadow: 
             0 10px 30px rgba(0, 0, 0, 0.3),  /* Main soft shadow */
             0 2px 10px rgba(0, 0, 0, 0.2);   /* Additional subtle inner shadow */        
+    }
+}
+
+@supports (grid-template-rows: masonry) {
+    .has-grid-3 {
+        display: none;
     }
 }

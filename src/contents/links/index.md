@@ -1,4 +1,4 @@
 ---
-title: "links"
-template: "pages.links"
+title: links
+template: pages.links
 ---
