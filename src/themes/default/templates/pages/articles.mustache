@@ -5,20 +5,25 @@
 
 <div class="article-grid">
     {{#site.context.articles}}
-    <div class="article-item">
-        <img class="article-image" src="{{site.baseUrl}}/images/{{slug}}/hero.png" alt="Hero" loading="lazy">
-        <div class="article-header">
-            <time datetime="{{publication.html}}">{{publication.html}}</time>
-            &middot; <span>{{readingTime}}m read</span>
-        </div>
-        <h2 class="article-title"><a href="{{permalink}}">{{title}}</a></h2>
-        <p class="article-description">{{description}}</p>
-        <div class="tags">
-        {{#tags}}
-            <a class="tag" href="#{{.}}"><small>{{.}}</small></a>
-        {{/tags}}
-        </div>
-    </div>
+        <a class="article-item" href="{{permalink}}">
+            <div class="article-image-wrapper">
+                <img class="article-image" src="{{site.baseUrl}}/images/{{slug}}/hero.png" alt="Hero" loading="lazy">
+            </div>
+
+            <div class="article-header">
+                <time datetime="{{publication.html}}">{{publication.html}}</time>
+                &middot; <span>{{readingTime}}m read</span>
+            </div>
+
+            <h2 class="article-title">{{title}}</h2>
+            <p class="article-description">{{description}}</p>
+
+            <div class="tags">
+            {{#tags}}
+                <span class="tag">{{.}}</span>
+            {{/tags}}
+            </div>
+        </a>
     {{/site.context.articles}}
 </div>
 

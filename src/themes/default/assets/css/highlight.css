@@ -1,9 +1,11 @@
 .hljs-comment {
-  color: var(--uchu-yellow-7);
+  color: var(--uchu-green-7);
 }
 .hljs-tag,
+.hljs-operator,
 .hljs-punctuation {
   color: var(--uchu-pink-7);
+  font-weight: bold;
 }
 .hljs-tag .hljs-name,
 .hljs-tag .hljs-attr {
@@ -15,8 +17,8 @@
 .hljs-meta .hljs-keyword,
 .hljs-doctag,
 .hljs-name {
-  color: var(--uchu-pink-7);
-  font-weight: bold
+  color: var(--uchu-red-5);
+  font-weight: bold;
 }
 /* User color: hue: 0 */
 .hljs-type,
@@ -27,7 +29,8 @@
 .hljs-quote,
 .hljs-template-tag,
 .hljs-deletion {
-  color: var(--uchu-purple-7);
+  color: var(--uchu-purple-4);
+  font-weight: bold;
 }
 .hljs-title,
 .hljs-section {
@@ -44,7 +47,6 @@
   color: var(--uchu-orange-7);
 }
 /* Language color: hue: 90; */
-.hljs-operator,
 .hljs-literal {
   color: var(--uchu-red-7);
 }
@@ -52,7 +54,7 @@
 .hljs-bullet,
 .hljs-code,
 .hljs-addition {
-  color: var(--uchu-green-7);
+  color: var(--uchu-green-8);
 }
 /* Meta color: hue: 200 */
 .hljs-meta {

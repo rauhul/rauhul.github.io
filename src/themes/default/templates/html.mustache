@@ -25,16 +25,18 @@
     <link rel="stylesheet" href="{{site.baseUrl}}/css/content.css">
     <link rel="stylesheet" href="{{site.baseUrl}}/css/footer.css">    
 
+    <link rel="stylesheet" href="{{site.baseUrl}}/css/tags.css">
     <link rel="stylesheet" href="{{site.baseUrl}}/css/articles.css">
     <link rel="stylesheet" href="{{site.baseUrl}}/css/photos.css">
     <link rel="stylesheet" href="{{site.baseUrl}}/css/links.css">
     {{#page.css}}<link rel="stylesheet" href="{{.}}">{{/page.css}}
 
     <link rel="stylesheet" href="{{site.baseUrl}}/css/highlight.css">
-    <script src="{{site.baseUrl}}/js/highlight.js"></script>
-    <script src="{{site.baseUrl}}/js/c.js"></script>
-    <script src="{{site.baseUrl}}/js/shell.js"></script>
-    <script src="{{site.baseUrl}}/js/swift.js"></script>
+    {{! <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css"> }}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/c.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/shell.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/swift.min.js"></script>
     <script>hljs.highlightAll();</script>
 </head>
 

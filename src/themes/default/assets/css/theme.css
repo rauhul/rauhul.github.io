@@ -80,13 +80,16 @@ main {
     }
 
     pre {
+        color: var(--uchu-yin-9);
         overflow-x: auto;
-        padding: 0.2rem;
+        padding: 0.5rem;
         font-family: monospace;
         font-size: 0.9rem;
         border-radius: 1ch;
-        border: 2px solid var(--uchu-gray-6);
-        max-width: 100%; 
+        border: 2px solid var(--uchu-gray-3);
+        background-color: var(--uchu-gray-2);
+        max-width: 100%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
     }
 
     ol, ul {

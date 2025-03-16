@@ -1,0 +1,19 @@
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: auto;
+
+    .tag {
+        border: 1px solid var(--uchu-gray-5);
+        background-color: var(--uchu-gray-1);
+        color: var(--uchu-yin-7);
+        padding: 0.3rem 0.6rem;
+        border-radius: 50px;
+        font-size: 0.7rem;
+    }
+
+    .tag:hover {
+        background-color: var(--uchu-gray-3);
+    }
+}
