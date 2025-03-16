@@ -3,11 +3,13 @@
 
 <h1>{{page.title}}</h1>
 
+{{> partials.grid3-warning}}
+
 <div class="article-grid">
     {{#site.context.articles}}
         <a class="article-item" href="{{permalink}}">
             <div class="article-image-wrapper">
-                <img class="article-image" src="{{site.baseUrl}}/images/{{slug}}/hero.png" alt="Hero" loading="lazy">
+                <img class="article-image" src="{{site.baseUrl}}/images/{{slug}}/hero.jpg" alt="Hero" loading="lazy">
             </div>
 
             <div class="article-header">
