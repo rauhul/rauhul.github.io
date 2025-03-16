@@ -28,6 +28,17 @@ a {
     text-decoration: inherit; /* no underline */
 }
 
+hr {
+    display: block;
+    border: 1px solid var(--uchu-gray-9);
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    /* border-color: var(--uchu-gray-1); */
+    /* height: 1; */
+    opacity: 1;
+}
+
 main {
     > * {
         color: var(--uchu-yin-9);
@@ -62,7 +73,7 @@ main {
         font-size: 0.85rem;
     }
 
-    h4 {
+    h5 {
         color: var(--uchu-yin-5);
         font-weight: bold;
         font-size: 0.7rem;

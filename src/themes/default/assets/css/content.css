@@ -22,6 +22,14 @@
             text-align: right;
         }
 
+        .content-body-column-separator {
+            display: none;
+            @media screen and (max-width: 800px) {
+                width: 100%;
+                display: block;
+            }   
+        }
+
         .content-body-column-main {
             margin: 1rem;
             max-width: 1000px;
