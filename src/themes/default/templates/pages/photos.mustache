@@ -5,6 +5,8 @@
 
 {{> partials.grid3-warning}}
 
+{{#albums}}
+<h2>{{title}}</h2>
 <div class="photo-grid">
     {{#photos}}
     <figure class="photo-item">
@@ -15,6 +17,7 @@
     </figure>
     {{/photos}}
 </div>
+{{/albums}}
 
 {{/main}}
 {{/html}}
