@@ -24,8 +24,8 @@
         background-color: white;
 
         @supports not (grid-template-rows: masonry) {
-            max-width: 200px;
-            max-height: 200px;
+            max-width: 1fr;
+            max-height: 1fr;
         }
 
         .photo-image {
