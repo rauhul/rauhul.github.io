@@ -94,12 +94,6 @@ albums:
     shutter-speed: 2500
     iso: 80
     wide: true
-  - url: https://rauhulpic.dws.rip/download/pics/maine/IMG_1841.jpeg
-    focal-length: 9
-    aperture: 2.8
-    shutter-speed: 100
-    iso: 50
-    wide: false
   - url: https://rauhulpic.dws.rip/download/pics/maine/IMG_1523.jpeg
     focal-length: 6
     aperture: 1.8

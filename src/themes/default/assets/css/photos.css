@@ -22,6 +22,7 @@
         border-radius: 1ch;
         overflow: hidden;
         background-color: white;
+
         @supports not (grid-template-rows: masonry) {
             max-width: 200px;
             max-height: 200px;
@@ -80,7 +81,7 @@
     z-index: 1;
     height: 100vh;
     width: 100vw;
-    background: rgba(255, 255, 255, 0.4);
+    background: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(1rem);
     display: flex;
     justify-content: center;
@@ -93,6 +94,7 @@
 
     .photo-overlay-image {
         border-radius: 1ch;
+
         margin: auto;
         max-width: 80vw;
         max-height: 80vh;
