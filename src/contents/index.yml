@@ -16,6 +16,8 @@ navigation:
     url: "/articles/"
   - label: "projects"
     url: "/projects/"
+  - label: "friends"
+    url: "/friends/"
   - label: "links"
     url: "/links/"
 - style: secondary

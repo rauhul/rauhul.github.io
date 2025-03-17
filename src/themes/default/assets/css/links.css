@@ -5,6 +5,7 @@
     gap: 1rem;
 
     .link-item {
+        height: 4rem;
         display: flex;
         flex-direction: row;
         border-radius: 1ch;
@@ -20,15 +21,14 @@
 
             display: block;
             overflow: hidden;
-            
-            background-color: var(--uchu-gray-6);
+
+            background-color: var(--uchu-green-4);
 
             .link-image {
                 height: 100%;
                 width: 100%;
                 overflow: hidden;    
                 filter: invert(1);
-
             }
         }
 

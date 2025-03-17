@@ -2,7 +2,7 @@ title: photos
 template: pages.photos
 
 albums:
-- title: "Maine"
+- title: "Maine '23"
   photos:
   - url: https://rauhulpic.dws.rip/download/pics/maine/IMG_1624.jpeg
     focal-length: 6
@@ -113,7 +113,52 @@ albums:
     iso: 32
     wide: false
 
-- title: "Concert"
+- title: "Japan '21"
+  photos:
+  - url: https://rauhulpic.dws.rip/download/pics/japan-21/IMG_3594.jpeg
+    focal-length: 6
+    aperture: 2.4
+    shutter-speed: 979
+    iso: 16
+    wide: false
+  - url: https://rauhulpic.dws.rip/download/pics/japan-21/DSC_5800.jpeg
+    focal-length: 35
+    aperture: 4.5
+    shutter-speed: 30
+    iso: 5000
+    wide: true
+  - url: https://rauhulpic.dws.rip/download/pics/japan-21/APC_0686.jpeg
+    focal-length: 4
+    aperture: 1.8
+    shutter-speed: 800
+    iso: 20
+    wide: true
+  - url: https://rauhulpic.dws.rip/download/pics/japan-21/DSC_6099.jpeg
+    focal-length: 35
+    aperture: 2.8
+    shutter-speed: 4000
+    iso: 200
+    wide: true
+  - url: https://rauhulpic.dws.rip/download/pics/japan-21/DSC_6382.jpeg
+    focal-length: 35
+    aperture: 1.4
+    shutter-speed: 500
+    iso: 50
+    wide: false
+  - url: https://rauhulpic.dws.rip/download/pics/japan-21/DSC_6742.jpeg
+    focal-length: 35
+    aperture: 4.5
+    shutter-speed: 800
+    iso: 800
+    wide: true
+  - url: https://rauhulpic.dws.rip/download/pics/japan-21/IMG_4230.jpeg
+    focal-length: 4
+    aperture: 1.8
+    shutter-speed: 1171
+    iso: 20
+    wide: true
+
+- title: "Concerts Assorted"
   photos:
   - url: https://rauhulpic.dws.rip/download/pics/concert/APC_0567.jpg
     focal-length: 6

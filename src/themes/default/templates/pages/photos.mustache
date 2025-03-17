@@ -16,9 +16,9 @@
 <div class="photo-grid">
     {{#photos}}
     <figure class="photo-item{{#wide}} wide{{/wide}}">
-        <img class="photo-image" src="{{url}}?max_width=256" alt="{{description}}" loading="lazy">
+        <img class="photo-image" src="{{url}}?max_width=512" alt="{{description}}" loading="lazy">
         <div class="photo-metadata">
-            {{focal-length}}mm | f/{{aperture}} | {{ shutter-speed }}s | ISO{{iso}}
+            {{focal-length}}mm | f/{{aperture}} | 1/{{ shutter-speed }}s | ISO{{iso}}
         </div>
     </figure>
     {{/photos}}
