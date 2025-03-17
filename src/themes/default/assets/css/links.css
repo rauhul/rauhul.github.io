@@ -11,19 +11,17 @@
         overflow: hidden;
 
         background-color: white;
-        border: 1px solid var(--uchu-gray-3);
-
 
         .link-image-wrapper {
             flex-shrink: 0;
-            height: 2rem;
-            width: 2rem;
-            padding: 1rem;
+            height: 2.4rem;
+            width: 2.4rem;
+            padding: 0.8rem;
 
             display: block;
             overflow: hidden;
             
-            background-color: var(--uchu-blue-3);
+            background-color: var(--uchu-gray-6);
 
             .link-image {
                 height: 100%;

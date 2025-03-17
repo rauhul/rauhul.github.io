@@ -72,3 +72,29 @@
         }
     }
 }
+
+.photo-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(5px); /* Add blur effect */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &.hidden {
+        opacity: 0;
+        display: none;
+    }
+
+    .photo-overlay-image {
+        border-radius: 2ch;
+        margin: auto;
+        max-width: 80vw;
+        max-height: 80vh;
+    }
+}
