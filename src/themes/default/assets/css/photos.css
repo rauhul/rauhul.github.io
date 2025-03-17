@@ -1,8 +1,8 @@
 .photo-grid {
     display: grid;
     gap: 1rem;
-    grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
-
+    grid-template-columns: repeat(auto-fill, minmax(18ch, 1fr));
+  
     @supports (grid-template-rows: masonry) {
         grid-template-rows: masonry;
     }
@@ -81,7 +81,7 @@
     height: 100vh;
     width: 100vw;
     background: rgba(255, 255, 255, 0.4);
-    backdrop-filter: blur(5px); /* Add blur effect */
+    backdrop-filter: blur(1rem);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -92,7 +92,7 @@
     }
 
     .photo-overlay-image {
-        border-radius: 2ch;
+        border-radius: 1ch;
         margin: auto;
         max-width: 80vw;
         max-height: 80vh;

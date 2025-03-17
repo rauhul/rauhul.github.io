@@ -2,169 +2,164 @@ title: photos
 template: pages.photos
 
 albums:
+- title: "Maine"
+  photos:
+  - url: https://rauhulpic.dws.rip/download/pics/maine/IMG_1624.jpeg
+    focal-length: 6
+    aperture: 1.8
+    shutter-speed: 4800
+    iso: 80
+    wide: false
+  - url: https://rauhulpic.dws.rip/download/pics/maine/DSC_2642.jpeg
+    focal-length: 35
+    aperture: 1.8
+    shutter-speed: 1250
+    iso: 250
+    wide: false
+  - url: https://rauhulpic.dws.rip/download/pics/maine/IMG_1517.jpeg
+    focal-length: 6
+    aperture: 1.8
+    shutter-speed: 350
+    iso: 80
+    wide: false
+  - url: https://rauhulpic.dws.rip/download/pics/maine/IMG_1741.jpeg
+    focal-length: 6
+    aperture: 1.8
+    shutter-speed: 15000
+    iso: 100
+    wide: false
+  - url: https://rauhulpic.dws.rip/download/pics/maine/IMG_3272.jpeg
+    focal-length: 6
+    aperture: 1.78
+    shutter-speed: 15
+    iso: 2000
+    wide: false
+  - url: https://rauhulpic.dws.rip/download/pics/maine/IMG_1473.jpeg
+    focal-length: 6
+    aperture: 1.8
+    shutter-speed: 6400
+    iso: 80
+    wide: false
+  - url: https://rauhulpic.dws.rip/download/pics/maine/IMG_1737.jpeg
+    focal-length: 6
+    aperture: 1.8
+    shutter-speed: 1700
+    iso: 80
+    wide: false
+  - url: https://rauhulpic.dws.rip/download/pics/maine/IMG_1507.jpeg
+    focal-length: 9
+    aperture: 2.8
+    shutter-speed: 70
+    iso: 250
+    wide: false
+  - url: https://rauhulpic.dws.rip/download/pics/maine/IMG_1726.jpeg
+    focal-length: 6
+    aperture: 1.8
+    shutter-speed: 2200
+    iso: 100
+    wide: false
+  - url: https://rauhulpic.dws.rip/download/pics/maine/IMG_1530.jpeg
+    focal-length: 9
+    aperture: 2.8
+    shutter-speed: 125
+    iso: 32
+    wide: false
+  - url: https://rauhulpic.dws.rip/download/pics/maine/IMG_1662.jpeg
+    focal-length: 6
+    aperture: 1.8
+    shutter-speed: 15
+    iso: 8000
+    wide: false
+  - url: https://rauhulpic.dws.rip/download/pics/maine/IMG_1711.jpeg
+    focal-length: 6
+    aperture: 1.8
+    shutter-speed: 4000
+    iso: 64
+    wide: false
+  - url: https://rauhulpic.dws.rip/download/pics/maine/IMG_3281.jpeg
+    focal-length: 6
+    aperture: 1.78
+    shutter-speed: 20
+    iso: 1000
+    wide: false
+  - url: https://rauhulpic.dws.rip/download/pics/maine/IMG_1745.jpeg
+    focal-length: 6
+    aperture: 1.8
+    shutter-speed: 2500
+    iso: 100
+    wide: false
+  - url: https://rauhulpic.dws.rip/download/pics/maine/IMG_1441.jpeg
+    focal-length: 6
+    aperture: 1.8
+    shutter-speed: 2500
+    iso: 80
+    wide: true
+  - url: https://rauhulpic.dws.rip/download/pics/maine/IMG_1841.jpeg
+    focal-length: 9
+    aperture: 2.8
+    shutter-speed: 100
+    iso: 50
+    wide: false
+  - url: https://rauhulpic.dws.rip/download/pics/maine/IMG_1523.jpeg
+    focal-length: 6
+    aperture: 1.8
+    shutter-speed: 950
+    iso: 64
+    wide: true
+  - url: https://rauhulpic.dws.rip/download/pics/maine/IMG_1831.jpeg
+    focal-length: 9
+    aperture: 2.8
+    shutter-speed: 17
+    iso: 2000
+    wide: false
+  - url: https://rauhulpic.dws.rip/download/pics/maine/IMG_1743.jpeg
+    focal-length: 9
+    aperture: 2.8
+    shutter-speed: 440
+    iso: 32
+    wide: false
+
 - title: "Concert"
   photos:
-  - url: https://rauhulpic.dws.rip/download/pics/elohim_1.png
+  - url: https://rauhulpic.dws.rip/download/pics/concert/APC_0567.jpg
+    focal-length: 6
+    aperture: 2.4
+    shutter-speed: 80
+    iso: 500
+    wide: true
+  - url: https://rauhulpic.dws.rip/download/pics/concert/DSC_2184.jpg
+    focal-length: 35
+    aperture: 2.0
+    shutter-speed: 160
+    iso: 1250
+    wide: false
+  - url: https://rauhulpic.dws.rip/download/pics/concert/VAR_1424.jpg
+    focal-length: 35
+    aperture: 1.6
+    shutter-speed: 60
+    iso: 8000
+    wide: true
+  - url: https://rauhulpic.dws.rip/download/pics/concert/VAR_1584.jpg
+    focal-length: 35
+    aperture: 1.6
+    shutter-speed: 60
+    iso: 8000
+    wide: false
+  - url: https://rauhulpic.dws.rip/download/pics/concert/elohim_0.jpg
+    focal-length: 35
+    aperture: 2.0
+    shutter-speed: 400
+    iso: 320
+    wide: true
+  - url: https://rauhulpic.dws.rip/download/pics/concert/elohim_1.png
     focal-length: 4
     aperture: 1.8
-    shutter-speed: 1/400
-    iso: 100
-
-- title: "Random"
-  photos:
-  - url: "https://picsum.photos/200/300"
-    description: "abcd"
+    shutter-speed: 400
+    iso: 32
+    wide: false
+  - url: https://rauhulpic.dws.rip/download/pics/concert/IMG_2620.jpg
     focal-length: 4
     aperture: 1.8
-    shutter-speed: 1/400
-    iso: 100
-  - url: "https://picsum.photos/300/200"
-    description: "abcd"
-    focal-length: 50
-    aperture: 3.5
-    shutter-speed: 1/200
-    iso: 800
-  - url: "https://picsum.photos/202/302"
-    description: "abcd"
-    focal-length: 35
-    aperture: 4.0
-    shutter-speed: 1/250
-    iso: 400
-  - url: "https://picsum.photos/203/303"
-    description: "abcd"
-    focal-length: 55
-    aperture: 5.6
-    shutter-speed: 1/125
-    iso: 1000
-  - url: "https://picsum.photos/204/304"
-    description: "abcd"
-    focal-length: 24
-    aperture: 2.0
-    shutter-speed: 1/60
-    iso: 200
-  - url: "https://picsum.photos/250/350"
-    description: "abcd"
-    focal-length: 85
-    aperture: 1.8
-    shutter-speed: 1/500
-    iso: 1600
-  - url: "https://picsum.photos/260/360"
-    description: "abcd"
-    focal-length: 28
-    aperture: 3.2
-    shutter-speed: 1/400
-    iso: 320
-  - url: "https://picsum.photos/270/370"
-    description: "abcd"
-    focal-length: 70
-    aperture: 4.5
-    shutter-speed: 1/300
-    iso: 640
-  - url: "https://picsum.photos/280/380"
-    description: "abcd"
-    focal-length: 40
-    aperture: 2.2
-    shutter-speed: 1/150
-    iso: 500
-  - url: "https://picsum.photos/290/390"
-    description: "abcd"
-    focal-length: 60
-    aperture: 3.8
-    shutter-speed: 1/350
-    iso: 720
-  - url: "https://picsum.photos/300/400"
-    description: "abcd"
-    focal-length: 90
-    aperture: 5.0
-    shutter-speed: 1/450
-    iso: 900
-  - url: "https://picsum.photos/310/410"
-    description: "abcd"
-    focal-length: 20
-    aperture: 2.5
-    shutter-speed: 1/100
-    iso: 300
-  - url: "https://picsum.photos/320/420"
-    description: "abcd"
-    focal-length: 30
-    aperture: 3.0
-    shutter-speed: 1/200
-    iso: 400
-  - url: "https://picsum.photos/330/430"
-    description: "abcd"
-    focal-length: 45
-    aperture: 4.0
-    shutter-speed: 1/250
-    iso: 600
-  - url: "https://picsum.photos/340/440"
-    description: "abcd"
-    focal-length: 50
-    aperture: 2.8
-    shutter-speed: 1/300
-    iso: 800
-  - url: "https://picsum.photos/350/450"
-    description: "abcd"
-    focal-length: 35
-    aperture: 3.5
-    shutter-speed: 1/150
-    iso: 500
-  - url: "https://picsum.photos/360/460"
-    description: "abcd"
-    focal-length: 55
-    aperture: 4.5
-    shutter-speed: 1/400
-    iso: 700
-  - url: "https://picsum.photos/370/470"
-    description: "abcd"
-    focal-length: 24
-    aperture: 2.0
-    shutter-speed: 1/100
-    iso: 200
-  - url: "https://picsum.photos/380/480"
-    description: "abcd"
-    focal-length: 85
-    aperture: 1.8
-    shutter-speed: 1/500
-    iso: 1600
-  - url: "https://picsum.photos/390/490"
-    description: "abcd"
-    focal-length: 28
-    aperture: 3.2
-    shutter-speed: 1/400
-    iso: 320
-  - url: "https://picsum.photos/400/500"
-    description: "abcd"
-    focal-length: 70
-    aperture: 4.5
-    shutter-speed: 1/300
-    iso: 640
-  - url: "https://picsum.photos/410/510"
-    description: "abcd"
-    focal-length: 40
-    aperture: 2.2
-    shutter-speed: 1/150
-    iso: 500
-  - url: "https://picsum.photos/420/520"
-    description: "abcd"
-    focal-length: 60
-    aperture: 3.8
-    shutter-speed: 1/350
-    iso: 720
-  - url: "https://picsum.photos/430/530"
-    description: "abcd"
-    focal-length: 90
-    aperture: 5.0
-    shutter-speed: 1/450
-    iso: 900
-  - url: "https://picsum.photos/440/540"
-    description: "abcd"
-    focal-length: 20
-    aperture: 2.5
-    shutter-speed: 1/100
-    iso: 300
-  - url: "https://picsum.photos/200/300"
-    description: "abcd"
-    focal-length: 45
-    aperture: 2.8
-    shutter-speed: 1/100
-    iso: 640
+    shutter-speed: 30
+    iso: 32
+    wide: false
