@@ -6,15 +6,14 @@
 {{> partials.grid3-warning}}
 
 <div class="article-grid">
-    {{#site.context.articles}}
-        <a class="article-item" href="{{permalink}}">
+    {{#list}}
+        <a class="article-item" href="{{url}}">
             <div class="article-image-wrapper">
-                <img class="article-image article-ratio" src="{{site.baseUrl}}/images/{{slug}}/hero.jpg" alt="Hero" loading="lazy">
+                <img class="article-image profile-ratio" src="{{site.baseURL}}/assets/friends/{{hero}}"loading="lazy">
             </div>
 
             <div class="article-header">
-                <time datetime="{{publication.html}}">{{publication.html}}</time>
-                &middot; <span>{{readingTime}}m read</span>
+                {{url}}
             </div>
 
             <h2 class="article-title">{{title}}</h2>
@@ -26,7 +25,7 @@
             {{/tags}}
             </div>
         </a>
-    {{/site.context.articles}}
+    {{/list}}
 </div>
 
 {{/main}}

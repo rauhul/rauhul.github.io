@@ -19,7 +19,14 @@
                 object-fit: cover;
                 width: 100%;
                 height: auto;
+            }
+
+            .article-ratio {
                 aspect-ratio: 16/9;
+            }
+
+            .profile-ratio {
+                aspect-ratio: 1/1;
             }
         }
 
