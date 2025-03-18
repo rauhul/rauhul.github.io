@@ -2,6 +2,63 @@ title: photos
 template: pages.photos
 
 albums:
+- title: "Canada '25"
+  photos:
+  - url: https://rauhulpic.dws.rip/download/pics/2025_01_24_munich/IMG_3190.jpg
+    focal-length: 15
+    aperture: 2.8
+    shutter-speed: 290
+    iso: 40
+    wide: false
+  - url: https://rauhulpic.dws.rip/download/pics/2025_01_24_munich/IMG_3223.jpg
+    focal-length: 15
+    aperture: 2.8
+    shutter-speed: 2500
+    iso: 50
+    wide: false
+  - url: https://rauhulpic.dws.rip/download/pics/2025_01_24_munich/IMG_3259.jpg
+    focal-length: 15
+    aperture: 2.8
+    shutter-speed: 2700
+    iso: 50
+    wide: false
+  - url: https://rauhulpic.dws.rip/download/pics/2025_01_24_munich/IMG_3185.jpg
+    focal-length: 15
+    aperture: 2.8
+    shutter-speed: 250
+    iso: 40
+    wide: false
+  - url: https://rauhulpic.dws.rip/download/pics/2025_01_24_munich/IMG_3186.jpg
+    focal-length: 15
+    aperture: 2.8
+    shutter-speed: 250
+    iso: 40
+    wide: false
+  - url: https://rauhulpic.dws.rip/download/pics/2025_01_24_munich/IMG_3203.jpg
+    focal-length: 15
+    aperture: 2.8
+    shutter-speed: 1600
+    iso: 50
+    wide: false
+  - url: https://rauhulpic.dws.rip/download/pics/2025_01_24_munich/IMG_3191.jpg
+    focal-length: 15
+    aperture: 2.8
+    shutter-speed: 290
+    iso: 40
+    wide: false
+  - url: https://rauhulpic.dws.rip/download/pics/2025_01_24_munich/IMG_3193.jpg
+    focal-length: 15
+    aperture: 2.8
+    shutter-speed: 250
+    iso: 40
+    wide: false
+  - url: https://rauhulpic.dws.rip/download/pics/2025_01_24_munich/IMG_3206.jpg
+    focal-length: 6
+    aperture: 1.8
+    shutter-speed: 6000
+    iso: 100
+    wide: false
+
 - title: "Maine '23"
   photos:
   - url: https://rauhulpic.dws.rip/download/pics/maine/IMG_1624.jpeg
