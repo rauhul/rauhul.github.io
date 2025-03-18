@@ -1,7 +1,6 @@
 .article-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(30ch, 1fr));
-    grid-template-rows: masonry;
     gap: 1rem;
     row-gap: 2rem;
 
