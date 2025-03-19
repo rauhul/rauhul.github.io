@@ -7,11 +7,11 @@
         grid-template-rows: masonry;
 
         /* Seems to have an issue when screen is very narrow. repeat never returns 0 */
-        @media screen and not (max-width: 800px) {
+        /* @media screen and not (max-width: 800px) {
             grid-template-columns:
                 repeat(auto-fit, minmax(8rem, 1fr) minmax(14rem, 2fr))
                 minmax(8rem, 1fr);
-        }
+        } */
     }
 
     .photo-item {
