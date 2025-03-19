@@ -2,6 +2,33 @@ title: projects
 template: pages.hero-links
 
 list:
+- title: Harmony
+  description: A bluetooth speaker and reactive ferrofluid display running Embedded Swift.
+  url: https://github.com/apple/swift-embedded-examples/tree/main/harmony
+  hero: harmony.jpeg
+  square: false
+- title: Swift MMIO
+  description: Define and operate on type safe MMIO.
+  url: https://github.com/apple/swift-mmio
+  hero: swift-og.png
+  square: false
+- title: Swift Embedded Examples
+  description: A collection of example projects using Embedded Swift.
+  url: https://github.com/apple/swift-embedded-examples
+  hero: swift-og.png
+  square: false
+- title: Swift Matter Examples
+  description: An Embedded Swift Matter application running on ESP32-C6.
+  url: https://github.com/apple/swift-matter-examples
+  hero: swift-og.png
+  square: false
+- title: Swift Playdate Examples
+  description: An Embedded Swift game running on Playdate by Panic.
+  url: https://github.com/apple/swift-playdate-examples
+  hero: swift-og.png
+  square: false
 - title: Swift Argument Parser
   description: A powerful and flexible library for parsing command-line arguments in Swift.
   url: https://github.com/apple/swift-argument-parser
+  hero: swift-og.png
+  square: false

@@ -3,18 +3,22 @@ template: pages.hero-links
 
 list:
 - title: Tyler Kim
-  hero: tyler-kim.jpeg
-  url: https://tyler.kim
   description: Tyler Kim is a professional whose personal website, tyler.kim, features a collection of blog posts and photographs reflecting his diverse interests and experiences. His writings cover topics such as personal reflections, professional insights, and travel experiences, providing a window into his multifaceted life.
+  url: https://tyler.kim
+  hero: tyler-kim.jpeg
+  square: true
 - title: Naren Dasan
-  hero: naren-dasan.jpeg
-  url: https://narendasan.com
   description: Naren is an AI and robotics researcher, develops deep learning for autonomous vehicles at NVIDIA and leads the Torch-TensorRT project. A HackIllinois organizer and open-source advocate, he studied at UIUC and USC, focusing on human-robot interaction.
+  url: https://narendasan.com
+  hero: naren-dasan.jpeg
+  square: true
 - title: Tanishq Dubey
-  hero: tanishq-dubey.jpeg
-  url: https://tanishqdubey.com
   description: Tanishq Dubey is a software engineer at Google, working on the Android platform. He is passionate about building products that empower users and make their lives easier. In his free time, he enjoys reading, writing, and exploring new technologies.
+  url: https://tanishqdubey.com
+  hero: tanishq-dubey.jpeg
+  square: true
 - title: Rohan Mathur
-  hero: rohan-mathur.jpeg
-  url: http://rmathur.com
   description: Rohan Mathur is a Senior Software Engineer at Apple, working on the Apple Maps team. He is passionate about building products that empower users and make their lives easier. In his free time, he enjoys reading, writing, and exploring new technologies.
+  url: http://rmathur.com
+  hero: rohan-mathur.jpeg
+  square: true

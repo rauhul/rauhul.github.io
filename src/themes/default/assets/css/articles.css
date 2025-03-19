@@ -20,11 +20,11 @@
                 height: auto;
             }
 
-            .article-ratio {
+            .wide {
                 aspect-ratio: 16/9;
             }
 
-            .profile-ratio {
+            .square {
                 aspect-ratio: 1/1;
             }
         }
