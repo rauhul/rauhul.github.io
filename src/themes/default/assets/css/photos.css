@@ -81,9 +81,8 @@
     background: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(1rem);
     display: flex;
-    justify-content: center;
-    align-items: center;
-
+    align-items: stretch;
+    
     &.hidden {
         opacity: 0;
         display: none;
@@ -91,9 +90,15 @@
 
     .photo-overlay-image {
         border-radius: 1ch;
-
         margin: auto;
         max-width: 80vw;
         max-height: 80vh;
+    }
+
+    .photo-overlay-control {
+        z-index: 2;
+        object-fit: contain;        
+        max-width: min(10vw, 100px);
+        filter: invert(1);
     }
 }
