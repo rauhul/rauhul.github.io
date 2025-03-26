@@ -100,5 +100,9 @@
         object-fit: contain;        
         max-width: min(10vw, 100px);
         filter: invert(1);
+
+        &:hover {
+            filter: invert(0.8);
+        }
     }
 }
