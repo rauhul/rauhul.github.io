@@ -22,3 +22,8 @@ list:
   url: http://rmathur.com
   hero: rohan-mathur.jpeg
   square: true
+- title: Kuba Mracek
+  description: Kuba Mracek is a software engineer at Apple, working on Developer Tools with a focus on Swift and LLVM. He has presented at multiple WWDCs on topics including Embedded Swift, Apple Silicon porting, and Xcode debugging tools. Originally from Czech Republic, he's passionate about developer experience and building better tooling for developers.
+  url: https://kubamracek.com
+  hero: kuba-mracek.jpeg
+  square: true
