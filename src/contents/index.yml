@@ -8,8 +8,6 @@ navigation:
     url: "/"
 - style: primary
   children:
-  - label: "about"
-    url: "/about/"
   - label: "photos"
     url: "/photos/"
   - label: "articles"
