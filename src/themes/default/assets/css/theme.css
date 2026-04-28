@@ -185,7 +185,7 @@ main article {
     }
 }
 
-@supports (grid-template-rows: masonry) {
+@supports (display: grid-lanes) {
     .has-grid-3 {
         display: none;
     }

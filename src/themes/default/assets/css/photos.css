@@ -2,25 +2,18 @@
     display: grid;
     gap: 1rem;
     grid-template-columns: repeat(auto-fill, minmax(18ch, 1fr));
-  
-    @supports (grid-template-rows: masonry) {
-        grid-template-rows: masonry;
 
-        /* Seems to have an issue when screen is very narrow. repeat never returns 0 */
-        /* @media screen and not (max-width: 800px) {
-            grid-template-columns:
-                repeat(auto-fit, minmax(8rem, 1fr) minmax(14rem, 2fr))
-                minmax(8rem, 1fr);
-        } */
+    @supports (display: grid-lanes) {
+        display: grid-lanes;
     }
 
     .photo-item {
-        position: relative; /* Add relative positioning */
+        position: relative;
         border-radius: 1ch;
         overflow: hidden;
         background-color: white;
 
-        @supports not (grid-template-rows: masonry) {
+        @supports not (display: grid-lanes) {
             max-width: 1fr;
             max-height: 1fr;
         }
@@ -30,7 +23,8 @@
             height: auto;
             display: block;
             object-fit: cover;
-            @supports not (grid-template-rows: masonry) {
+
+            @supports not (display: grid-lanes) {
                 aspect-ratio: 1;
             }
         }
